@@ -1,0 +1,30 @@
+Instrucciones para Ejecutar el Script
+Asegúrate de tener todas las bibliotecas necesarias 
+
+Ingresar los Detalles:
+Cuando se te solicite, ingresa el nombre de la especie (por ejemplo, Bursera linanoe), y los años mínimo y máximo para las fechas de eventos.
+
+¿Qué Hace el Script'
+Descarga de Datos de GBIF:
+
+Descarga todos los registros de ocurrencia para la especie especificada utilizando la API de GBIF.
+Genera una URL que representa la consulta realizada en GBIF.
+Validación de Datos:
+
+Realiza una limpieza inicial de los datos.
+Valida las coordenadas y asegura que tienen entre 3 y 8 decimales.
+Valida las fechas de los eventos asegurando que están dentro del rango especificado.
+Valida los nombres taxonómicos utilizando el respaldo taxonómico de GBIF.
+Valida la georreferenciación utilizando GeoPy.
+Enriquecimiento de Datos:
+
+Añade metadatos adicionales como la fuente de datos (dataSource).
+Generación de Informe:
+
+Genera un informe detallado que incluye la URL de los datos en GBIF y estadísticas de la validación y curación de los datos.
+Guardar Datos Curados:
+
+Guarda los datos curados en un archivo CSV.
+Guarda los datos sin curar en otro archivo CSV.
+Guarda el informe en un archivo de texto.
+Este script garantiza que los datos descargados estén validados y enriquecidos adecuadamente, y proporciona una referencia clara de la fuente de los datos para transparencia y reproducibilidad.
